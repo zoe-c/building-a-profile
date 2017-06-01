@@ -25,10 +25,11 @@ section {
   max-width: 1100px;
   background-color: #ffffff;
   padding: 2rem 0;
-  /*border: solid black 1px;*/
 }
+
 h1{
   display:block;
+  position:relative;
   text-align:center;
 }
 
@@ -36,15 +37,17 @@ h1{
   display:flex;
   position:relative;
   flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  /*width:100%;*/
+  width:70vw;
+  margin:0 5vw;
+  font-weight:lighter;
 }
-
+/*-----------------------*/
 .prof-type{
   display:flex;
   text-align: center;
+  margin-bottom:3vh;
 }
+
 .prof-type label, input{
   flex-grow:1;
 }
@@ -52,37 +55,53 @@ h1{
 .user-info{
   display:flex;
   flex-direction:row;
-  justify-content:space-around;
+  position:relative;
+  justify-content:space-between;
   width:100%;
+  margin-bottom:3vh;
 }
+
+.user-info input{
+  border:solid lightgrey 1px;
+  border-radius:2px;
+}
+
 .left-info{
   display:flex;
   flex-direction:column;
-  /*max-width:100%;*/
+  min-width:33vw;
+  height:13vh;
   position:relative;
+  /*flex-grow: 1;*/
 }
+
 .right-info{
   display:flex;
   flex-direction:column;
-  /*max-width:100%;*/
+  min-width:33vw;
   position:relative;
+  /*flex-grow: 1;*/
 }
-
+/*---------------------------*/
 .img-and-submit{
-  border:solid black 1px;
   display:flex;
-  /*flex-flow:wrap row;*/
+  /*flex-direction:column;*/
+  position:relative;
   justify-content:space-between;
-  align-items:center;
   width:100%;
-
 }
+
 .profile-pic{
-  /*display:inline-block;*/
   max-width:50%;
-
-
-}
-button{
   flex-grow:1;
+}
+
+button{
+  max-width:50%;
+  flex-grow:1;
+  background-color:white;
+  border-radius:4px;
+  border:solid black 2px;
+  font-weight:bold;
+  font-size:1.5vw;
 }
