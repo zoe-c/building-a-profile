@@ -8,9 +8,10 @@
 <body>
   <div class="outer">
     <section>
+
       <section class="form content">
       <h1> Sign Up</h1>
-      <form>
+      <form action="get-user-profile-info.php" method="POST">
         <div class="prof-type">
           <label for="radio" >
             <input type="radio" id"radio" name="chooseone" value="admin">
@@ -26,24 +27,30 @@
           </label>
         </div>
 
-
         <div class="user-info">
-          <label for="name">I'm a label</label>
-          <input type="text" id="name">
-          <label for="email">I'm a label</label>
-          <input type="text" id="email">
-          <label for="password">I'm a label</label>
-          <input type="text" id="password">
-          <label for="confirm-password">I'm a label</label>
-          <input type="text" id="confirm-password">
+          <div class="left-info">
+            <label for="name">I'm a label</label>
+            <input type="text" id="name">
+            <label for="email">I'm a label</label>
+            <input type="text" id="email">
+          </div>
+          <div class="right-info">
+            <label for="password">I'm a label</label>
+            <input type="text" id="password">
+            <label for="confirm-password">I'm a label</label>
+            <input type="text" id="confirm-password">
+          </div>
         </div>
 
-
-        <div class="profile-pic">
-          <label for="file">profile picture</label>
-          <input type="file" id="file">
+        <div "img-and-submit">
+          <div class="profile-pic">
+            <label for="file">profile picture</label>
+            <input type="file" id="file">
+          </div>
+          <button type="submit" form="form1" value="Submit">Submit</button>
         </div>
       </section>
+      
     </section>
   </div>
 </body>
