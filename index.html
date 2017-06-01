@@ -7,27 +7,43 @@
 </head>
 <body>
   <div class="outer">
+    <section>
       <h1> Sign Up</h1>
       <form>
-        <fieldset>
-        <!-- <legend>Radio Buttons</legend> -->
-          <label>
-            <input type="radio" name="chooseone" value="admin" checked>
-              admin
+        <div class="prof-type">
+          <label for="radio" >
+            <input type="radio" id"radio" name="chooseone" value="admin">
+            admin
           </label>
-
-          <label>
-            <input type="radio" name="chooseone" value="personal">
-              personal
+          <label for="radio">
+            <input type="radio" id"radio" name="chooseone" value="personal" checked>
+            personal
           </label>
-
-          <label>
-            <input type="radio" name="chooseone" value="guest">
-              guest
+          <label for="radio">
+            <input type="radio" id"radio" name="chooseone" value="guest">
+            guest
           </label>
-        </fieldset>
+        </div>
 
 
+        <div class="user-info">
+          <label for="name">I'm a label</label>
+          <input type="text" id="name">
+          <label for="email">I'm a label</label>
+          <input type="text" id="email">
+          <label for="password">I'm a label</label>
+          <input type="text" id="password">
+          <label for="confirm-password">I'm a label</label>
+          <input type="text" id="confirm-password">
+        </div>
+
+
+        <div class="profile-pic">
+          <label for="file">profile picture</label>
+          <input type="file" id="file">
+        </div>
+
+    </section>
   </div>
 </body>
 </html>

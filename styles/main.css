@@ -22,7 +22,8 @@ body {
 }
 
 section {
-  max-width: 760px;
+  max-width: 90vw;
   background-color: #ffffff;
   padding: 2rem 0;
+  /*border: solid black 1px;*/
 }
