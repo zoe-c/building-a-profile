@@ -27,3 +27,20 @@ section {
   padding: 2rem 0;
   /*border: solid black 1px;*/
 }
+
+section{
+  position:inherit;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.prof-type{
+  display:flex;
+  text-align: center;
+}
+
+.prof-type label, input{
+  flex-grow:1;
+}
